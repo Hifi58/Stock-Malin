@@ -5,3 +5,7 @@
 Index_page:
     path: /
     controller: App\Controller\SecurityController::login
+
+Login_page:
+  path: /Crud/Product
+  controller: App\Controller\CrudProductController::index
