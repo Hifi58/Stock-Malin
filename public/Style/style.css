@@ -20,6 +20,8 @@ body{
     background-size: cover;
 }
 
+/*Formulaires*/
+
 .bigtitle{
     font-family: var(--font_title);
     font-size: 3em;
@@ -98,6 +100,43 @@ body{
 
 .linklogin:hover{
     text-decoration: underline;
+}
+
+/*page d'accueil*/
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.buttonlogin2{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: var(--font_title);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border: solid rgb(243, 240, 240) 1px;
+    background-color: transparent;
+}
+
+.buttonlogin2:hover{
+    transition: 0.5s;
+    background-color: rgb(76, 168, 116);
+    border: 1px solid rgb(76, 168, 116);
+}
+
+.linklogin2{
+    color: rgb(22, 22, 22);
+    margin-top: 20px;
+    font-family: var(--font_title);
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
 

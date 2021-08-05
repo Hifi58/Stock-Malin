@@ -1,11 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-
-Index_page:
+index:
     path: /
-    controller: App\Controller\SecurityController::login
+    controller: App\Controller\HomeController::home
 
 Login_page:
-  path: /Crud/Product
+  path: /crud/product
   controller: App\Controller\CrudProductController::index
+
+Home_page:
+  path: /login
+  controller: App\Controller\SecurityController::login
+
+Register_page:
+  path: /register
+  controller: App\Controller\ResistrationController::register
