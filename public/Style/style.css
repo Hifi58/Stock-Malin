@@ -139,4 +139,19 @@ body{
     text-decoration: none;
 }
 
+/*Index Crud*/
+
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: auto;
+    background-color: white;
+    line-height: 2;
+}
+
+thead{
+    display: none;
+}
+
 
