@@ -3,7 +3,10 @@
 {% block title %}Produits{% endblock %}
 
 {% block body %}
-    <h1 class="bigtitle">Produits</h1>
+<div class="titre">
+    <h1 class="bigtitle">Produit</h1>
+    <button class="logout"><a class="linkcrud" href="{{ path('app_logout')}}">Déconnexion</a></button>
+</div>
 
     <table class="table">
         <tbody>

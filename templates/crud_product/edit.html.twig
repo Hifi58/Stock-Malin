@@ -3,11 +3,14 @@
 {% block title %}Modifier{% endblock %}
 
 {% block body %}
+<div class="titre">
     <h1 class="bigtitle">Modifier un achat</h1>
+    <button class="logout"><a class="linkcrud" href="{{ path('app_logout')}}">Déconnexion</a></button>
+</div>
 
     {{ include('crud_product/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('crud_product_index') }}">back to list</a>
+    <a class="linkback" href="{{ path('crud_product_index') }}">&#10094; back to list</a>
 
     {{ include('crud_product/_delete_form.html.twig') }}
 {% endblock %}

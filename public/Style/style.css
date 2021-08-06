@@ -16,8 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(images/wave.svg);
-    background-size: cover;
+    background: linear-gradient(163deg, #deedfd 25%, #27709b 100%);
 }
 
 /*Formulaires*/
@@ -25,7 +24,7 @@ body{
 .bigtitle{
     font-family: var(--font_title);
     font-size: 3em;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     margin-top: 1rem;
     margin-left: 1.5rem;
 }
@@ -41,7 +40,7 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 20px;
-    box-shadow: 10px 10px 26px 9px #3c85af;
+    box-shadow: 0px 8px #3f7597;
 }
 
 .formlogin{
@@ -67,39 +66,15 @@ body{
 
 ::placeholder{
     color: rgb(243, 240, 240);
-}
-
-.buttonlogin{
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-family: var(--font_title);
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 5px;
-    background-color: transparent;
-    border: none;
-    border: solid rgb(243, 240, 240) 1px;
-    color: rgb(243, 240, 240);
-}
-
-.buttonlogin:hover{
-    transition: 0.5s;
-    color: rgb(39, 112, 155);
-    background-color: rgb(243, 240, 240);
+    letter-spacing: 2px;
 }
 
 .linklogin{
-    color: rgb(243, 240, 240);
+    color: rgb(22, 22, 22);
     margin-top: 20px;
     font-family: var(--font_title);
     letter-spacing: 2px;
     text-decoration: none;
-}
-
-.linklogin:hover{
-    text-decoration: underline;
 }
 
 /*page d'accueil*/
@@ -110,26 +85,6 @@ body{
     margin: auto;
 }
 
-.buttonlogin2{
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-family: var(--font_title);
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 5px;
-    background-color: transparent;
-    border: none;
-    border: solid rgb(243, 240, 240) 1px;
-    background-color: transparent;
-}
-
-.buttonlogin2:hover{
-    transition: 0.5s;
-    background-color: rgb(76, 168, 116);
-    border: 1px solid rgb(76, 168, 116);
-}
 
 .linklogin2{
     color: rgb(22, 22, 22);
@@ -141,12 +96,15 @@ body{
 
 /*Index Crud*/
 
-table{
+.table{
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    align-content: center;
     margin: auto;
-    background-color: white;
+    background-color: rgb(243, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 8px rgb(165, 165, 165);
+    padding: 2rem;
     line-height: 2;
 }
 
@@ -154,4 +112,154 @@ thead{
     display: none;
 }
 
+tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
+td{
+    margin-right: 10px;
+}
+
+.buttonshow{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    font-family: var(--font_title);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(43, 177, 60);
+    border: none;
+    border: solid rgb(43, 177, 60) 1px;
+    box-shadow: 0 6px rgb(32, 126, 44);
+    position: relative;
+}
+
+.buttonshow:hover{
+    box-shadow: 0 4px rgb(32, 126, 44);
+    top: 2px;
+}
+
+.buttonshow:active{
+    box-shadow: 0 0 rgb(32, 126, 44);
+    top: 6px;
+}
+
+.buttonedit{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    font-family: var(--font_title);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(235, 101, 39);
+    border: none;
+    border: solid rgb(235, 101, 39) 1px;
+    box-shadow: 0 6px rgb(175, 75, 29);
+    position: relative;
+}
+
+.buttonedit:hover{
+    box-shadow: 0 4px rgb(175, 75, 29);
+    top: 2px;
+}
+
+.buttonedit:active{
+    box-shadow: 0 0 rgb(175, 75, 29);
+    top: 6px;
+}
+
+.linkcrud{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(243, 240, 240);
+}
+
+.buttonnew{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: var(--font_title);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgb(243, 240, 240);
+    border: none;
+    border: solid rgb(243, 240, 240) 1px;
+    color: rgb(22, 22, 22);
+    box-shadow: 0 6px rgb(195, 188, 188);
+    position: relative;
+}
+
+.buttonnew:hover{
+    box-shadow: 0 4px rgb(195, 188, 188);
+    top: 2px;
+}
+
+.buttonnew:active{
+    box-shadow: 0 0 rgb(195, 188, 188);
+    top: 6px;
+}
+
+.linknew{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(22, 22, 22);
+}
+
+.logout{
+    height: 20px;
+    width: 100px;
+    cursor: pointer;
+    font-family: var(--font_title);
+    border-radius: 5px;
+    background-color: rgb(212, 8, 8);
+    border: none;
+    border: solid rgb(212, 8, 8) 1px;
+    box-shadow: 0 6px rgb(158, 12, 12);
+    color:rgb(243, 240, 240);
+    position: relative;
+    margin: 20px 20px;
+}
+
+.titre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout:hover{
+    box-shadow: 0 4px rgb(158, 12, 12);
+    top: 2px;
+}
+
+.logout:active{
+    box-shadow: 0 0 rgb(158, 12, 12);
+    top: 6px;
+}
+
+.linkback{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: var(--font_title);
+    font-size: 1.2em;
+    color: rgb(22, 22, 22);
+}
+
+.linkback:hover{
+    animation: back 700ms ease 0s 1 normal forwards;
+}
+
+@keyframes back {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-15px);
+    }
+  }

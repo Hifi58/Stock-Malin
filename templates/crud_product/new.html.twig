@@ -3,7 +3,10 @@
 {% block title %}Ajout{% endblock %}
 
 {% block body %}
+<div class="titre">
     <h1 class="bigtitle">Ajouter un nouvel achat</h1>
+    <button class="logout"><a class="linkcrud" href="{{ path('app_logout')}}">Déconnexion</a></button>
+</div>
 
     {{ include('crud_product/_form.html.twig') }}
 
