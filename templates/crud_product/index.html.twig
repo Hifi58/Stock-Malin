@@ -26,7 +26,6 @@
         <tbody>
         {% for product in products %}
             <tr>
-                <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
                 <td>{{ product.place }}</td>
                 <td>{{ product.reference }}</td>
@@ -34,7 +33,7 @@
                 <td>{{ product.savDate ? product.savDate|date('Y-m-d') : '' }}</td>
                 <td>{{ product.price }}</td>
                 <td>{{ product.utilisationTip }}</td>
-                <td>{{ product.ticketPictures }}</td>
+                <td><img src="/{{ product.ticketPictures }}" width="200px"/></td>
                 <td>{{ product.manual }}</td>
                 <td>
                     <button class="buttonshow"><a class="linkcrud" href="{{ path('crud_product_show', {'id': product.id}) }}">Voir</a></button>

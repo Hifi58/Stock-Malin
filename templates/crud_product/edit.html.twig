@@ -8,9 +8,9 @@
     <button class="logout"><a class="linkcrud" href="{{ path('app_logout')}}">Déconnexion</a></button>
 </div>
 
-    {{ include('crud_product/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a class="linkback" href="{{ path('crud_product_index') }}">&#10094; back to list</a>
+    {{ include('crud_product/_form.html.twig', {'button_label': 'Modifier'}) }}
 
     {{ include('crud_product/_delete_form.html.twig') }}
+    <a class="linkback" href="{{ path('crud_product_index') }}">&#10094; Retour à l'historique</a>
+
 {% endblock %}

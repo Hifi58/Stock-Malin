@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <th>Ticket d'achat</th>
-                <td>{{ product.ticketPictures }}</td>
+                <td><img src="/{{ product.ticketPictures }}" width="200px"/></td>
             </tr>
             <tr>
                 <th>Manuel</th>
@@ -53,9 +53,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('crud_product_index') }}">back to list</a>
-
-    <a href="{{ path('crud_product_edit', {'id': product.id}) }}">edit</a>
-
+    <button class="buttonedit"><a class="linkcrud" href="{{ path('crud_product_edit', {'id': product.id}) }}">Modifier</a></button>
     {{ include('crud_product/_delete_form.html.twig') }}
+    <a class="linkback" href="{{ path('crud_product_index') }}">&#10094; Retour à l'historique</a>
+
+
 {% endblock %}

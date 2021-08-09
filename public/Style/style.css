@@ -94,6 +94,33 @@ body{
     text-decoration: none;
 }
 
+@media all and (max-width: 324px)
+{
+    .bigtitle{
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 362px)
+{
+    body{
+        background: none;
+        background-color: rgb(243, 240, 240);
+    }
+
+}
+
+@media all and (max-width: 652px)
+{
+    .table{
+        justify-content: center;
+    }
+    tr{
+        flex-wrap: wrap;
+    }
+
+}
+
 /*Index Crud*/
 
 .table{
@@ -263,3 +290,25 @@ td{
       transform: translateX(-15px);
     }
   }
+
+  /*formulaire ajout et edit*/
+
+  form{
+      display: flex;
+      flex-direction: column;
+    align-content: initial;
+      margin: auto;
+  }
+
+  #product{
+      display: flex;
+      flex-direction: column;
+  }
+
+  textarea{
+      resize: none;
+  }
+
+  /* label{
+      display: none;
+  } */
